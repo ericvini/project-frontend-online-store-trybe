@@ -4,6 +4,7 @@ import * as api from '../services/api';
 import CategoriesList from './CategoriesList';
 import ProductsList from './ProductsList';
 import CartIcon from '../assets/cart.svg';
+import '../../src/css/style.css'
 
 // code idea based on <GP-7><Thx!!>
 
@@ -46,7 +47,7 @@ class Home extends Component {
     return (
       <div>
         <div>
-          <div>
+          <div className='search-bar'>
             <input
               name="query"
               className="search-bar-input"
@@ -56,19 +57,22 @@ class Home extends Component {
             />
           </div>
         </div>
-        <Link to="/shopping-cart" data-testid="shopping-cart-button">
-          <img src={ CartIcon } className="cart-icon" alt="Carrinho de compras" />
+        <Link to="/shopping-cart" data-testid="shopping-cart-button" >
+          <img src={ CartIcon } className="cart-icon" alt="Carrinho de compras"/>
         </Link>
-        <div data-testid="home-initial-message">
+        <div data-testid="home-initial-message" className='search-label' >
           <p>Digite algum termo de pesquisa ou escolha uma categoria.</p>
         </div>
-        <button
+        <div className='search-button'>
+        <button        
           type="submit"
           data-testid="query-button"
           onClick={ this.handleClick }
         >
           Pesquisar
         </button>
+        </div>
+       
         <CategoriesList fetchByCategory={ this.fetchByCategory } />
         <ProductsList productList={ productList } />
       </div>

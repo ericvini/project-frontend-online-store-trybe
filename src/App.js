@@ -5,11 +5,12 @@ import './App.css';
 import ShoppingCart from './components/ShoppingCart';
 import ProductDetails from './components/ProductDetails';
 import Home from './components/Home';
+import './css/style.css';
 
 
 function App() {
   return (
-    <div>
+    <div className='container'>
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={ Home } />

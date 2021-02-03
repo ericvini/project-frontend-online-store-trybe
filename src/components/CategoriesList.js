@@ -36,7 +36,7 @@ class CategoriesList extends React.Component {
   render() {
     const { categories } = this.state;
     return (
-      <div>
+      <div className='categories-list'>
         <div>
           <h1>Categorias</h1>
           <ul>

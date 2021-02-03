@@ -7,7 +7,7 @@ class ProductsList extends React.Component {
   render() {
     const { productList } = this.props;
     return (
-      <div>
+      <div className='list'>
         <br />
         <ul>
           {productList.length ? (

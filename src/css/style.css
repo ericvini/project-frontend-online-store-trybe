@@ -1,0 +1,50 @@
+/* .container{
+  
+} */
+.search-bar{
+  text-align: center;
+  
+ 
+}
+
+.cart-icon{
+  float: right;
+  margin-right: 20px;
+  
+ 
+}
+
+.search-label{
+  text-align: center;
+ 
+ 
+}
+
+.search-button{
+  text-align: center;
+}
+
+.list{
+  float: right;
+  text-align: center;
+  /* border-style: inset;
+  border-color: red; */
+  width: 700px;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  z-index: 999;
+  /* width: 100%; */
+  height: 23px;
+}
+
+.categories-list{
+  /* border-style: inset;
+  border-color: red; */
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  
+}
